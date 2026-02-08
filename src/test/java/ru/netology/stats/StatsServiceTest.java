@@ -10,17 +10,18 @@ class StatsServiceTest {
         long[] minMonth = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 9;
 
-        long actual = service.minSales (minMonth);
+        long actual = service.minSales(minMonth);
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void testMaxSales() {
         StatsService service = new StatsService();
         long[] maxMonth = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 8;
 
-        long actual = service.maxSales (maxMonth);
+        long actual = service.maxSales(maxMonth);
 
         Assertions.assertEquals(expected, actual);
 
