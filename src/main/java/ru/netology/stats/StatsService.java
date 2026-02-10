@@ -45,7 +45,7 @@ public class StatsService {
 
     public int salesBelowAverage(long[] sales) {
         int quantity = 0;
-        int belowAverage = (int) averageMonthlySalesAmount(sales);
+        long belowAverage = averageMonthlySalesAmount(sales);
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] < belowAverage) {
                 quantity++;
@@ -56,7 +56,7 @@ public class StatsService {
 
     public int salesAboveAverage(long[] sales) {
         int quantity = 0;
-        int aboveAverage = (int) averageMonthlySalesAmount(sales);
+        long aboveAverage = averageMonthlySalesAmount(sales);
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] > aboveAverage) {
                 quantity++;
